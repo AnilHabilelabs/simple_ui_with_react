@@ -1,83 +1,62 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-.cards {
-    margin-top: 100px;
-    display:grid; 
-    justify-content: space-evenly;
-    grid-template-columns:repeat(auto-fill,400px); 
-}
-
-.card1,
-.card2,
-.card3 {
-    border: 1px solid black;
-    margin: 30px;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: justify;
-
-}
-
-.card1 {
-    background-color: rgba(196, 196, 233, 0.425);
-}
-
-.card1:hover {
-    background-color: #70cf74f5;
-}
-
-.card2 {
-    background-color: rgb(49, 175, 158);
-}
-
-.card2:hover {
-    background-color: #4677dff5;
-}
-
-.card3 {
-    background-color: rgba(248, 93, 93, 0.425);
-}
-
-.card3:hover {
-    background-color: #bb4cddf5;
-}
-
-.boxHeader {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.btn {
-    position: absolute;
-    /* margin-top: 10px; */
-    text-align: center;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 6px 9px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.btn:hover {
-    cursor: pointer;
-    background-color: transparent;
-    color: black;
-    border: 1px solid rgba(190, 190, 190, 0.952);
-}
-
-.btnDiv {
+.container {
+    margin-top: 40px;
+    gap: 40px;
     display: flex;
     justify-content: center;
+}
+
+.card {
+    width: 300px;
+    border-radius: 8px;
+    height: 350px;
+    border: 1px solid rgb(207, 188, 188);
+    box-shadow: 10px 10px 15px rgb(166, 168, 168);
+}
+
+.card-body {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.card-title {
+
+    font-size: 22px;
+    padding: 15px;
+    color: white;
+}
+
+.card-title:hover {
+    color: black;
+}
+
+.card-text {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+button {
+    font-size: 22px;
+    height: 35px;
+    width: 145px;
+
+    margin-top: 10px;
+    background-color: rgb(244, 244, 247);
+    border-radius: 3px;
+    color: black;
+    font-weight: 950;
 }

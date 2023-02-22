@@ -1,12 +1,12 @@
-import React from 'react';
-import './Header.css';
+import React from "react";
+import "./Header.css";
 
-function Header() {
+const Header = () => {
   return (
     <div className="headerDiv">
       <h1>Anil Karela</h1>
     </div>
   );
-}
+};
 
 export default Header;
